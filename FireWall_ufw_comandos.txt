@@ -1,0 +1,27 @@
+Utilice el comando de estado:
+$ sudo ufw status
+$ sudo ufw status numbered
+$ sudo ufw status verbose
+
+¿Cómo veo los registros del firewall?
+Por defecto, todas las entradas de UFW se
+registran en el archivo /var/log/ufw.log.
+Use el comando grep / more command / tail command y otro comando
+para ver los registros de ufw:
+
+$ sudo more /var/log/ufw.log
+$ sudo tail -f /var/log/ufw.log
+
+¿Cómo veo los informes ufw?
+El informe agregado muestra la lista de reglas tal
+como se agregaron en la línea de comandos:
+Otros informes posibles son:
+
+$ sudo ufw show added
+$ sudo ufw show listening
+$ sudo ufw show raw
+$ sudo ufw show builtins
+$ sudo ufw show before-rules
+$ sudo ufw show user-rules
+$ sudo ufw show after-rules
+$ sudo ufw show logging-rules
